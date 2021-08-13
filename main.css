@@ -16,7 +16,7 @@ padding: 140px;
     color: hsl(0, 0%, 95%); 
 }
 .page-container p{
-    color: hsla(0, 5%, 60%, 0.75); 
+    color: hsla(0, 0%, 100%, 0.75);
 }
 .box-left {
     background-color: hsl(31, 77%, 52%);
@@ -43,37 +43,14 @@ padding: 140px;
     border-radius: 0px 0px 9px 9px;
     width: 375px;
 }
-@media screen and (max-width: 480px) {
-    .container{flex-direction: column; 
-    }
-    .box-left{
-        border-radius: 9px 9px 0px 0px;
-        width: 375px;
-    }
-    .box-middle{
-        width: 375px;
-    }
-    .box-right{
-        border-radius: 0px 0px 9px 9px;
-        width: 375px;
-    }
-}
+
  
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     body{
-        padding: 140px;
+        padding:0px;
     }
-    .box-left{
-        width: 1440px;
-        border-radius: 9px 0px 0px 9px;
-    }
-    .box-middle{
-        width: 1440px;
-        border-radius: 0px 0px 0px 0px; 
-    }
-    .box-right{
-        width: 1440px;
-        border-radius: 0px 9px 9px 0px;
+    .page-container{
+        flex-direction: column;
     }
 }
 .box-left a{
