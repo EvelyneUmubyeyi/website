@@ -51,7 +51,12 @@ padding: 140px;
     }
     .page-container{
         flex-direction: column;
+       
     }
+    .box-left{
+        width: 250;
+    }
+
 }
 .box-left a{
     color:hsl(31, 77%, 52%);
