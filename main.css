@@ -2,18 +2,26 @@
 body {
 font-family:'Lexend Deca', sans-serif;
 font-weight: 400;
-font-size: 15px;
-letter-spacing: 3px;
-line-height: 1.5;
-padding: 140px;
+font-size: 1em;
+letter-spacing: 0.15em;
+line-height: 1em;
 }
 
 .page-container{
+    border: 2px solid red;
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    width: 100vw;
     display: flex;
-/*min-height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
 }
 .page-container h1{
+    padding-top: 0.3em;
     color: hsl(0, 0%, 95%); 
+    font-size: 2em;
 }
 .page-container p{
     color: hsla(0, 0%, 100%, 0.75);
@@ -21,43 +29,60 @@ padding: 140px;
 .box-left {
     background-color: hsl(31, 77%, 52%);
     padding: 30px;
+    border-radius: 2% 0% 0% 2%;
+    width: 200px;
+    height: 360px;
 }
 .box-middle {
     background-color: hsl(184, 100%, 22%);
     padding: 30px;
+    width: 200px;
+    height: 360px;
 }
 .box-right {
     background-color: hsl(179, 100%, 13%);
     padding: 30px;
+    border-radius: 0% 2% 2% 0%;
+    width: 200px;
+    height: 360px;
 }
-.container{flex-direction: column; 
-}
-.box-left{
-    border-radius: 5% 0% 0% 5%;
-    width: 375px;
-}
-.box-middle{
-    width: 375px;
-}
-.box-right{
-    border-radius: 0% 5% 5% 0%;
-    width: 375px;
-}
-
+.box-left p{
+    padding-top: 1.4em;
+    padding-bottom: 6.5em;
+    font-size:smaller; 
+    }
+    .box-middle p{  
+    font-size:smaller;
+    padding-top: 1.4em;
+    padding-bottom: 5.5em;
+     }
+    .box-right p{  
+    font-size:smaller;
+    padding-top: 1.4em;
+    padding-bottom: 6.5em;
+     }
  
-@media screen and (max-width: 480px) {
-    body{
-        padding:0px;
-    }
+ @media only screen and (max-width: 480px) {
     .page-container{
+        display: flex;
         flex-direction: column;
-       
-    }
-    .box-left{
-        width: 250;
+        height: 1360px;
+        width: 390px;
+        border: yellow;
+   }
+        .box-left{
+            border-radius:2% 2% 0% 0% ;
+            width:285px;
+        }
+        .box-middle{
+            width:285px;
+        }
+        .box-right{
+            border-radius:0% 0% 2% 2% ;
+            width:285px;
+        }
     }
 
-}
 .box-left a{
     color:hsl(31, 77%, 52%);
     background-color: white;
@@ -75,16 +100,12 @@ padding: 140px;
     background:none;
     color: white;
     }
-    .box-left p{
-    padding-bottom: 100px;
-    font-size:smaller; 
-    padding-bottom: 120px;
-    }
+
      
-    .box-middle{
+    /*.box-middle{
     padding: 30px;
     color: white;;
-    }
+    }*/
      
      
     .box-middle a{
@@ -104,14 +125,7 @@ padding: 140px;
     background:none;
     color: white;
     }
-    .box-middle p{  
-    font-size:smaller;
-    padding-bottom: 120px;
-    }
-    .box-right p{  
-        font-size:smaller;
-        padding-bottom: 120px;
-        }
+
     .box-right a{
     color: hsl(179, 100%, 13%);
     background-color: white;
