@@ -66,8 +66,8 @@ line-height: 1em;
     .page-container{
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        width: 100vw;
+        height: 1360px;
+        width: 390px;
    }
         .box-left{
             border-radius:2% 2% 0% 0%;
